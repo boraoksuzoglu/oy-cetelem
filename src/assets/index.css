@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.container:not(.is-fluid) {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  .container:not(.is-fluid) {
+    width: 100%;
+    max-width: 560px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container:not(.is-fluid) {
+    width: 100%;
+    max-width: 850px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container:not(.is-fluid) {
+    width: 100%;
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .container:not(.is-fluid) {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+.container-sm {
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .container-sm {
+    max-width: 560px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container-sm {
+    max-width: 850px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-sm {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .container-sm {
+    max-width: 1400px;
+  }
+}
+
+.container-md {
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 900px) {
+  .container-md {
+    max-width: 850px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-md {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .container-md {
+    max-width: 1400px;
+  }
+}
+
+.container-lg {
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .container-lg {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .container-lg {
+    max-width: 1400px;
+  }
+}
+
+.container-xl {
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 1800px) {
+  .container-xl {
+    max-width: 1400px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #076ae0;
+  text-decoration: none;
+}
+
+body {
+  background: rgb(39, 39, 42);
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-danger {
+  background: #dc3c3c;
+}
+
+.btn-success {
+  background: #009223;
+}
+
+.header-container {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.header-container .button-group {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .button-group .btn {
+  margin: 0 0.5rem;
+}
+
+.tally {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+.tally .tally_item {
+  text-align: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+}
+.tally .tally_item .btn {
+  margin: 0 0.5rem;
+}
+.tally .tally_item .oy {
+  font-size: 30px;
+  font-weight: 600;
+}
+.tally .tally_item img {
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+@media (max-width: 340px) {
+  .tally .tally_item img {
+    height: 160px;
+  }
+}
+.tally .tally_single {
+  grid-column: span 2;
+}
+
+.history {
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+.history table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.history table thead {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.history table th {
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.history table td {
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto 1rem auto;
+}
+footer .link {
+  margin-top: 0.5rem;
+}
+footer img {
+  width: 80%;
+  max-width: 320px;
+  margin: auto;
+  margin: 1rem 0;
+}/*# sourceMappingURL=index.css.map */

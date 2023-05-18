@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useState } from 'react'
+
+import HistoryContext from './contexts/HistoryContext'
+
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Tally from './components/Tally'
+import History from './components/History'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const localData = localStorage.getItem('data')
+
+	const [history, setHistory] = useState(JSON.parse(localData) || [])
+
+	return (
+		<div className="App">
+			<HistoryContext.Provider value={{ history, setHistory }}>
+				<Header />
+				<Tally />
+				<History />
+				<Footer />
+			</HistoryContext.Provider>
+		</div>
+	)
 }
 
-export default App;
+export default App
