@@ -21,7 +21,7 @@ function Tally() {
 
 		setTimeout(() => {
 			setDisable(false)
-		}, 1500)
+		}, 500)
 	}
 
 	function save() {
@@ -60,7 +60,7 @@ function Tally() {
 	function add(aday) {
 		if (disable) {
 			return toast.error('Lütfen bekleyin.', {
-				autoClose: 1500,
+				autoClose: 500,
 				theme: 'dark',
 			})
 		} else {
@@ -79,7 +79,7 @@ function Tally() {
 	function subtract(aday) {
 		if (disable) {
 			return toast.error('Lütfen bekleyin.', {
-				autoClose: 1500,
+				autoClose: 500,
 				theme: 'dark',
 			})
 		} else {
